@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #0f5dfa;
+}
+
+* {
+  font-family: "Itim", cursive;
+  color: #222;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.image {
+  width: 90vw;
+  max-width: 400px;
+  min-height: 200px;
+  box-shadow: 8px 8px 0px #223;
+}
+
+.button {
+  height: 100px;
+  width: 300px;
+  background-color: #fff;
+  border: hidden;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 10px;
+  transition: background-color 0.05s ease;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+
+.button:disabled {
+  background-color: #bbb;
+  color: rgba(0, 0, 0, 0);
+  cursor: progress;
+}
